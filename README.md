@@ -1,4 +1,4 @@
-## Recommend websites:
+## Recommended websites:
 1. [PapersWithCode](https://paperswithcode.com) The trending, latest and greatest in machine.
 
 2. [SnailTyan](http://noahsnail.com/categories/) Blogs of algorithms, papers translation in Chinese, etc.
