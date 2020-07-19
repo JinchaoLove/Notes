@@ -1,11 +1,14 @@
 ## Recommended websites:
-1. [PapersWithCode](https://paperswithcode.com) The trending, latest and greatest in machine.
+- [PapersWithCode](https://paperswithcode.com) The trending, latest and greatest in machine.
 
-2. [SnailTyan](http://noahsnail.com/categories/) Blogs of algorithms, papers translation in Chinese, etc.
+- [SOTA-AI](https://www.stateoftheart.ai) The state-of-the-art works in AI.
 
-3. [TutorialsPoint](https://www.tutorialspoint.com/machine_learning_tutorials.htm) Tutorials of machine learning.
+- [SnailTyan](http://noahsnail.com/categories/) Blogs of algorithms, papers translation in Chinese, etc.
 
-4. [GithubReviews](https://githubreviews.com/explore/machine-learning) Github reviews/stars for your searching.
+- [TutorialsPoint](https://www.tutorialspoint.com/machine_learning_tutorials.htm) Tutorials of machine learning.
 
-5. [PyGuide](https://google.github.io/styleguide/pyguide.html) Google style guide for python.
+- [GithubReviews](https://githubreviews.com/explore/machine-learning) Github reviews/stars for your searching.
+
+- [PyGuide](https://google.github.io/styleguide/pyguide.html) Google style guide for python.
+
 
