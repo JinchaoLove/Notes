@@ -28,7 +28,7 @@ The occurrence and duration of silence and speech segments can be captured by Vo
 - [ ] Filled pauses detection
 
 ### Speaking Rate Features
-
+****
 ### Frequency Features
 
 ### Intensity Features
