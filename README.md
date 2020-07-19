@@ -11,4 +11,10 @@
 
 - [PyGuide](https://google.github.io/styleguide/pyguide.html) Google style guide for python.
 
+## Learning
+
+### Reinforcement Learning
+- [Basic knowledge in Zhihu](https://zhuanlan.zhihu.com/p/25319023)
+- [Soft Actor-Critic](https://zhuanlan.zhihu.com/p/70360272)
+- [Sample Efficient Adaptive Text-to-Speech](https://sample-efficient-adaptive-tts.github.io/demo/), in [Zhihu](https://zhuanlan.zhihu.com/p/45702794)
 
