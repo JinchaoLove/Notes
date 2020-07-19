@@ -6,3 +6,6 @@
 3. [TutorialsPoint](https://www.tutorialspoint.com/machine_learning_tutorials.htm) Tutorials of machine learning.
 
 4. [GithubReviews](https://githubreviews.com/explore/machine-learning) Github reviews/stars for your searching.
+
+5. [PyGuide](https://google.github.io/styleguide/pyguide.html) Google style guide for python.
+
