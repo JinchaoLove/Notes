@@ -24,7 +24,7 @@ The related features include speech or pause duration, pause count, rate (such a
 
 The occurrence and duration of silence and speech segments can be captured by Voice Activity Detection (VAD) method in [Kaldi](https://github.com/kaldi-asr/kaldi/blob/8ce3a95761e0eb97d95d3db2fcb6b2bfb7ffec5b/src/ivector/voice-activity-detection.cc), [Py-WebRTC-VAD](https://github.com/wiseman/py-webrtcvad), or [pyannote-audio](https://github.com/pyannote/pyannote-audio) for neural building blocks.
 
-- [ ] Filled pauses detection
+- [ ] Filled pauses **detection**
 - [ ] word count
 
 ### Frequency Features
@@ -44,9 +44,8 @@ These features include the amplitude of speech or pauses, [shimmer](https://www.
 
 | Features                | Tools                    |
 | ----------------------- | ------------------------ |
-| spectrogram, chromagram, energy_entropy | [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis/blob/0396495663de14b8a83fe666cefb9fbe098d1956/pyAudioAnalysis/ShortTermFeatures.py), [opensmile.lldcore](https://github.com/naxingyu/opensmile/blob/bcaf89d048253e9519d758057f1e7a2176871a3d/src/lldcore)                      |
-| shimmer, HNR            | [opensmile.pitchJitter](https://github.com/naxingyu/opensmile/blob/bcaf89d048253e9519d758057f1e7a2176871a3d/src/lld/pitchJitter.cpp), [Perturbation_analysis](https://github.com/Mak-Sim/Troparion/tree/master/Perturbation_analysis)                      |
-| RMS energy              | [librosa.feature.rms](https://librosa.org/librosa/generated/librosa.feature.rms.html#librosa.feature.rms)                      |
+| spectrogram, chromagram, energy_entropy, RMS energy | [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis/blob/0396495663de14b8a83fe666cefb9fbe098d1956/pyAudioAnalysis/ShortTermFeatures.py), [librosa.feature.rms](https://librosa.org/librosa/generated/librosa.feature.rms.html), [opensmile.lldcore](https://github.com/naxingyu/opensmile/blob/bcaf89d048253e9519d758057f1e7a2176871a3d/src/lldcore)                      |
+| shimmer, HNR            | [Perturbation_analysis](https://github.com/Mak-Sim/Troparion/tree/master/Perturbation_analysis), [opensmile.pitchJitter](https://github.com/naxingyu/opensmile/blob/bcaf89d048253e9519d758057f1e7a2176871a3d/src/lld/pitchJitter.cpp)                      |
 | MFCC, Filterbank        | [librosa](https://librosa.org/librosa/generated/librosa.feature.mfcc.html), [python_speech_features](https://python-speech-features.readthedocs.io/en/latest/index.html#python_speech_features.base.fbank) |
 
 ### ASR-based Features
