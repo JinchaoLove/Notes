@@ -7,17 +7,21 @@
 
 ## Recommended websites:
 
-- [PapersWithCode](https://paperswithcode.com) The trending, latest and greatest in machine.
+- [PapersWithCode](https://paperswithcode.com): The trending, latest and greatest in machine.
 
-- [SOTA-AI](https://www.stateoftheart.ai) The state-of-the-art works in AI.
+- [SOTA-AI](https://www.stateoftheart.ai): The state-of-the-art works in AI.
 
-- [SnailTyan](http://noahsnail.com/categories/) Blogs of algorithms, papers translation in Chinese, etc.
+- [Transformers](https://github.com/huggingface/transformers): State-of-the-art Natural Language Processing for PyTorch and TensorFlow.
 
-- [TutorialsPoint](https://www.tutorialspoint.com/machine_learning_tutorials.htm) Tutorials of machine learning.
+- [awesome](https://github.com/sindresorhus/awesome): [machine-learning](https://github.com/josephmisiti/awesome-machine-learning#readme), [speech-language-processing](https://github.com/edobashira/speech-language-processing#readme) Resources.
 
-- [GithubReviews](https://githubreviews.com/explore/machine-learning) Github reviews/stars for your searching.
+- [SnailTyan](http://noahsnail.com/categories/): Blogs of algorithms, papers translation in Chinese, etc.
 
-- [PyGuide](https://google.github.io/styleguide/pyguide.html) Google style guide for python.
+- [TutorialsPoint](https://www.tutorialspoint.com/machine_learning_tutorials.htm): Tutorials of machine learning.
+
+- [GithubReviews](https://githubreviews.com/explore/machine-learning): Github reviews for searching.
+
+- [PyGuide](https://google.github.io/styleguide/pyguide.html): Google style guide for python.
 
 ## Learning
 
