@@ -13,6 +13,8 @@
 
 - [Transformers](https://github.com/huggingface/transformers): State-of-the-art Natural Language Processing for PyTorch and TensorFlow.
 
+- [awesome](https://github.com/sindresorhus/awesome): [machine-learning](https://github.com/josephmisiti/awesome-machine-learning#readme), [speech-language-processing](https://github.com/edobashira/speech-language-processing#readme) Resources.
+
 - [SnailTyan](http://noahsnail.com/categories/): Blogs of algorithms, papers translation in Chinese, etc.
 
 - [TutorialsPoint](https://www.tutorialspoint.com/machine_learning_tutorials.htm): Tutorials of machine learning.
