@@ -33,10 +33,12 @@ These features include the information of voice period (speech period), vocal st
 
 | Features             | Tools                          |
 | -------------------- | ------------------------------ |
-| pitch, jitter | [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis/blob/0396495663de14b8a83fe666cefb9fbe098d1956/pyAudioAnalysis/ShortTermFeatures.py#L129), [Perturbation_analysis](https://github.com/Mak-Sim/Troparion/tree/master/Perturbation_analysis), [FCN-F0](https://github.com/ardaillon/FCN-f0), [opensmile.pitchJitter](https://github.com/naxingyu/opensmile/blob/bcaf89d048253e9519d758057f1e7a2176871a3d/src/lld/pitchJitter.cpp), [opensmile.pitchACF](https://github.com/naxingyu/opensmile/blob/bcaf89d048253e9519d758057f1e7a2176871a3d/src/lldcore/pitchACF.cpp), [opensmile.harmonics](https://github.com/naxingyu/opensmile/blob/bcaf89d048253e9519d758057f1e7a2176871a3d/src/lld/harmonics.cpp), [Praat](https://github.com/luffy-yu/pitch_jitter_shimmer)                         |
+| pitch, jitter | [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis/blob/0396495663de14b8a83fe666cefb9fbe098d1956/pyAudioAnalysis/ShortTermFeatures.py#L129), [Perturbation_analysis](https://github.com/Mak-Sim/Troparion/tree/master/Perturbation_analysis), [FCN-F0](https://github.com/ardaillon/FCN-f0), |
+| |[opensmile.pitchJitter](https://github.com/naxingyu/opensmile/blob/bcaf89d048253e9519d758057f1e7a2176871a3d/src/lld/pitchJitter.cpp), [.pitchACF](https://github.com/naxingyu/opensmile/blob/bcaf89d048253e9519d758057f1e7a2176871a3d/src/lldcore/pitchACF.cpp), [.harmonics](https://github.com/naxingyu/opensmile/blob/bcaf89d048253e9519d758057f1e7a2176871a3d/src/lld/harmonics.cpp), [Praat](https://github.com/luffy-yu/pitch_jitter_shimmer)                         |
 | spectral flatness    | [librosa.feature.spectral_flatness](https://librosa.org/librosa/generated/librosa.feature.spectral_flatness.html#librosa.feature.spectral_flatness)                      |
-| zero-crossing rate   | [librosa.feature.zero_crossing_rate](https://librosa.org/librosa/generated/librosa.feature.zero_crossing_rate.html#librosa.feature.zero_crossing_rate), [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis/blob/0396495663de14b8a83fe666cefb9fbe098d1956/pyAudioAnalysis/ShortTermFeatures.py)                           |
-| spectral centroid, tonal centroid    | [python_speech_features.ssc](https://python-speech-features.readthedocs.io/en/latest/index.html#python_speech_features.base.ssc), [librosa.feature.spectral_centroid](https://librosa.org/librosa/generated/librosa.feature.spectral_centroid.html#librosa.feature.spectral_centroid), [librosa.feature.tonnetz](https://librosa.org/librosa/generated/librosa.feature.tonnetz.html#librosa.feature.tonnetz) |
+| ZCR   | [librosa.feature.zero_crossing_rate](https://librosa.org/librosa/generated/librosa.feature.zero_crossing_rate.html#librosa.feature.zero_crossing_rate), [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis/blob/0396495663de14b8a83fe666cefb9fbe098d1956/pyAudioAnalysis/ShortTermFeatures.py)                           |
+| spectral/tonal centroid   | [python_speech_features.ssc](https://python-speech-features.readthedocs.io/en/latest/index.html#python_speech_features.base.ssc), 
+| |[librosa.feature.spectral_centroid](https://librosa.org/librosa/generated/librosa.feature.spectral_centroid.html#librosa.feature.spectral_centroid), [.tonnetz](https://librosa.org/librosa/generated/librosa.feature.tonnetz.html#librosa.feature.tonnetz) |
 
 ### Intensity Features
 
@@ -44,7 +46,7 @@ These features include the amplitude of speech or pauses, [shimmer](https://www.
 
 | Features                | Tools                    |
 | ----------------------- | ------------------------ |
-| spectrogram, chromagram, energy_entropy, RMS energy | [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis/blob/0396495663de14b8a83fe666cefb9fbe098d1956/pyAudioAnalysis/ShortTermFeatures.py), [librosa.feature.rms](https://librosa.org/librosa/generated/librosa.feature.rms.html), [opensmile.lldcore](https://github.com/naxingyu/opensmile/blob/bcaf89d048253e9519d758057f1e7a2176871a3d/src/lldcore)                      |
+| spectrogram, energy | [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis/blob/0396495663de14b8a83fe666cefb9fbe098d1956/pyAudioAnalysis/ShortTermFeatures.py), [librosa.feature.rms](https://librosa.org/librosa/generated/librosa.feature.rms.html), [opensmile.lldcore](https://github.com/naxingyu/opensmile/blob/bcaf89d048253e9519d758057f1e7a2176871a3d/src/lldcore)                      |
 | shimmer, HNR            | [Perturbation_analysis](https://github.com/Mak-Sim/Troparion/tree/master/Perturbation_analysis), [opensmile.pitchJitter](https://github.com/naxingyu/opensmile/blob/bcaf89d048253e9519d758057f1e7a2176871a3d/src/lld/pitchJitter.cpp)                      |
 | MFCC, Filterbank        | [librosa](https://librosa.org/librosa/generated/librosa.feature.mfcc.html), [python_speech_features](https://python-speech-features.readthedocs.io/en/latest/index.html#python_speech_features.base.fbank) |
 
@@ -63,7 +65,12 @@ These features include the amplitude of speech or pauses, [shimmer](https://www.
 The tags include part-of-speech (POS), named entity, and dependency tags.
 A similar feature is Linguistic Inquiry and Word Count (LIWC), which uses a dictionary to assign categories to words.
 
-An anthology of annotation-tools can be found in [awesome-NLP](https://github.com/keon/awesome-nlp#annotation-tools). Specificly, the tagger toolkits include English version, such as [NLTK](https://www.nltk.org/api/nltk.tag.html), [Stanford-CoreNLP](https://github.com/Lynten/stanford-corenlp), [StAn](https://github.com/ChristophAlt/StAn), [TextBlob](https://github.com/sloria/TextBlob), and Chinese version, such as [HanLP](https://github.com/hankcs/HanLP/tree/master), [jieba](https://github.com/fxsjy/jieba), etc. For the LIWC text analysis, there are toolkits like [LIWC-text-analysis](https://pypi.org/project/liwc-text-analysis/) and [Chinese LIWC](https://github.com/thunlp/Auto_CLIWC).
+An anthology of annotation-tools can be found in [awesome-NLP](https://github.com/keon/awesome-nlp#annotation-tools). Specificly, the tagger toolkits for English and Chinese are listed below.
+
+| Features | Tools for English | Tools for Chinese |
+| -------- | ----------------- | ----------------- |
+| Tags     | [NLTK](https://www.nltk.org/api/nltk.tag.html), [Stanford-CoreNLP](https://github.com/Lynten/stanford-corenlp), [StAn](https://github.com/ChristophAlt/StAn), [TextBlob](https://github.com/sloria/TextBlob) | [NLTK](https://www.nltk.org/api/nltk.tag.html), [HanLP](https://github.com/hankcs/HanLP/tree/master), [jieba](https://github.com/fxsjy/jieba) |
+| LIWC | [LIWC-text-analysis](https://pypi.org/project/liwc-text-analysis/) | [Chinese LIWC](https://github.com/thunlp/Auto_CLIWC) |
 
 ### Complexity Features
 
