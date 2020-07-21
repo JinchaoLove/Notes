@@ -75,7 +75,10 @@ An anthology of annotation-tools can be found in [awesome-NLP](https://github.co
 
 Complexity features measure the lexical richness of texts, i.e. the variety of words and word combinations. The features include Brunet’s W index (use sample size and vocabulary size), Honoré’s R Statistics (use part of the frequency spectrum), standardized word entropy suffix ratio, and so on.
 
-These complexity metrics can be extracted by [cophi](https://pypi.org/project/cophi/), [Linguistic-and-Stylistic-Complexity](https://github.com/tsproisl/Linguistic_and_Stylistic_Complexity), and [textstat](https://github.com/shivam5992/textstat).
+| Features    | Tools |
+| ----------- | ----- |
+| complexity  | [cophi](https://pypi.org/project/cophi/), [Linguistic-and-Stylistic-Complexity](https://github.com/tsproisl/Linguistic_and_Stylistic_Complexity) |
+| readability | [textstat](https://github.com/shivam5992/textstat) |
 
 ### Perplexity Features
 
