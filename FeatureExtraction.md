@@ -22,10 +22,9 @@
 The pauses, including silent pauses, filled pauses (like um, hm, er, etc.), and non-verbal phenomena (like coughing, throat clearing, laughs, inspirations).
 The related features include speech or pause duration, pause count, rate (such as words-per-minute (WPM)), speech period, silence-to-word ratio, and so on.
 
-The occurrence and duration of silence and speech segments can be captured by Voice Activity Detection (VAD) method in [Kaldi](https://github.com/kaldi-asr/kaldi/blob/8ce3a95761e0eb97d95d3db2fcb6b2bfb7ffec5b/src/ivector/voice-activity-detection.cc), [Py-WebRTC-VAD](https://github.com/wiseman/py-webrtcvad), or [pyannote-audio](https://github.com/pyannote/pyannote-audio) for neural building blocks.
+The occurrence and duration of silence and speech segments can be captured by Voice Activity Detection (VAD) method in [Kaldi](https://github.com/kaldi-asr/kaldi/blob/8ce3a95761e0eb97d95d3db2fcb6b2bfb7ffec5b/src/ivector/voice-activity-detection.cc), [Py-WebRTC-VAD](https://github.com/wiseman/py-webrtcvad), or [pyannote-audio](https://github.com/pyannote/pyannote-audio) for neural building blocks. The toolkits of word-based features, such as WPM, are listed in [Tags-based Features](#tags-based-features).
 
 - [ ] Filled pauses detection
-- [ ] word count
 
 ### Frequency Features
 
@@ -33,7 +32,7 @@ These features include the information of voice period (speech period), vocal st
 
 | Features             | Tools                          |
 | -------------------- | ------------------------------ |
-| pitch, jitter | [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis/blob/0396495663de14b8a83fe666cefb9fbe098d1956/pyAudioAnalysis/ShortTermFeatures.py#L129), [Perturbation_analysis](https://github.com/Mak-Sim/Troparion/tree/master/Perturbation_analysis), [FCN-F0](https://github.com/ardaillon/FCN-f0), |
+| pitch, jitter, harmonics | [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis/blob/0396495663de14b8a83fe666cefb9fbe098d1956/pyAudioAnalysis/ShortTermFeatures.py#L129), [Perturbation_analysis](https://github.com/Mak-Sim/Troparion/tree/master/Perturbation_analysis), [FCN-F0](https://github.com/ardaillon/FCN-f0), |
 | |[opensmile.pitchJitter](https://github.com/naxingyu/opensmile/blob/bcaf89d048253e9519d758057f1e7a2176871a3d/src/lld/pitchJitter.cpp), [.pitchACF](https://github.com/naxingyu/opensmile/blob/bcaf89d048253e9519d758057f1e7a2176871a3d/src/lldcore/pitchACF.cpp), [.harmonics](https://github.com/naxingyu/opensmile/blob/bcaf89d048253e9519d758057f1e7a2176871a3d/src/lld/harmonics.cpp), [Praat](https://github.com/luffy-yu/pitch_jitter_shimmer)                         |
 | spectral flatness    | [librosa.feature.spectral_flatness](https://librosa.org/librosa/generated/librosa.feature.spectral_flatness.html#librosa.feature.spectral_flatness)                      |
 | ZCR   | [librosa.feature.zero_crossing_rate](https://librosa.org/librosa/generated/librosa.feature.zero_crossing_rate.html#librosa.feature.zero_crossing_rate), [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis/blob/0396495663de14b8a83fe666cefb9fbe098d1956/pyAudioAnalysis/ShortTermFeatures.py)                           |
@@ -74,22 +73,28 @@ An anthology of annotation-tools can be found in [awesome-NLP](https://github.co
 
 ### Complexity Features
 
-Complexity features measure the variety of words and word combinations. The features include Brunet’s W index and Honoré’s R Statistics, standardized word entropy suffix ratio, and so on.
+Complexity features measure the lexical richness of texts, i.e. the variety of words and word combinations. The features include Brunet’s W index (use sample size and vocabulary size), Honoré’s R Statistics (use part of the frequency spectrum), standardized word entropy suffix ratio, and so on.
+
+These complexity metrics can be extracted by [cophi](https://pypi.org/project/cophi/), [Linguistic-and-Stylistic-Complexity](https://github.com/tsproisl/Linguistic_and_Stylistic_Complexity), and [textstat](https://github.com/shivam5992/textstat).
 
 ### Perplexity Features
 
-Perplexity measures how well the language model fits the text.
+Perplexity features measure how well the language model fits the text. These features can be calculated by [NLTK](https://www.nltk.org/api/nltk.lm.html?highlight=perplexity#nltk.lm.api.LanguageModel.perplexity) toolkit. And there are also some examples such as [LangModel](https://github.com/ollie283/language-models/blob/master/LangModel.py) and [ChineseBERT](https://github.com/DUTANGx/Chinese-BERT-as-language-model).
 
 ## Conversation Features
 
+A detailed conversational analysis toolkit by CornellNLP is [ConvoKit](https://github.com/CornellNLP/Cornell-Conversational-Analysis-Toolkit), including Linguistic coordination, diversity and so on.
+
 ### Hesitation and Puzzlement Features
 
-These features include pause ratio/count (same as [Pause-based Features](#pause-based-features) above), question ratio (question words), incomplete sentence ratio, unintelligible word ratio and so on.
+These features include pause ratio/count (same as [Pause-based Features](#pause-based-features) above), question ratio (question words), incomplete sentence ratio, unintelligible word ratio (readability toolkit [textstat](https://github.com/shivam5992/textstat)) and so on.
+
+- [ ] question ratio, incomplete sentence ratio
 
 ### Repetition Features
 
-These features measures the frequency of repetitions, such as type-token ratio (the ratio of the number of unique words to the total number of words) and so on.
+These features measures the frequency of repetitions, such as type-token ratio (can be extracted by [cophi](https://pypi.org/project/cophi/) and [Linguistic-and-Stylistic-Complexity](https://github.com/tsproisl/Linguistic_and_Stylistic_Complexity)) and so on.
 
 ### Turn-related Features
 
-These features include the number of turns, average length of turns, number of unique words and response time/length in a turn, and so on.
+These features include number of unique words (type-token ratio in [Repetition Features](#repetition-features)) and response time/length (VAD in [Pause-based Features](#pause-based-features)) in a turn, the number of turns, average length of turns, and so on.
