@@ -7,7 +7,7 @@
     - [Intensity Features](#intensity-features)
     - [ASR-based Features](#asr-based-features)
   - [Linguistic Features](#linguistic-features)
-    - [Tags-based Features](#tags-based-features)
+    - [Tag-based Features](#tag-based-features)
     - [Complexity Features](#complexity-features)
     - [Perplexity Features](#perplexity-features)
   - [Conversation Features](#conversation-features)
@@ -59,7 +59,7 @@ These features include the amplitude of speech or pauses, [shimmer](https://www.
 
 ## Linguistic Features
 
-### Tags-based Features
+### Tag-based Features
 
 The tags include part-of-speech (POS), named entity, and dependency tags.
 A similar feature is Linguistic Inquiry and Word Count (LIWC), which uses a dictionary to assign categories to words.
