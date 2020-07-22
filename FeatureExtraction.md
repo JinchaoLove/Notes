@@ -36,7 +36,7 @@ These features include the information of voice period (speech period), vocal st
 | |[opensmile.pitchJitter](https://github.com/naxingyu/opensmile/blob/bcaf89d048253e9519d758057f1e7a2176871a3d/src/lld/pitchJitter.cpp), [.pitchACF](https://github.com/naxingyu/opensmile/blob/bcaf89d048253e9519d758057f1e7a2176871a3d/src/lldcore/pitchACF.cpp), [.harmonics](https://github.com/naxingyu/opensmile/blob/bcaf89d048253e9519d758057f1e7a2176871a3d/src/lld/harmonics.cpp), [Praat](https://github.com/luffy-yu/pitch_jitter_shimmer)                         |
 | spectral flatness    | [librosa.feature.spectral_flatness](https://librosa.org/librosa/generated/librosa.feature.spectral_flatness.html#librosa.feature.spectral_flatness)                      |
 | ZCR   | [librosa.feature.zero_crossing_rate](https://librosa.org/librosa/generated/librosa.feature.zero_crossing_rate.html#librosa.feature.zero_crossing_rate), [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis/blob/0396495663de14b8a83fe666cefb9fbe098d1956/pyAudioAnalysis/ShortTermFeatures.py)                           |
-| spectral/tonal centroid   | [python_speech_features.ssc](https://python-speech-features.readthedocs.io/en/latest/index.html#python_speech_features.base.ssc), 
+| spectral/tonal centroid   | [python_speech_features.ssc](https://python-speech-features.readthedocs.io/en/latest/index.html#python_speech_features.base.ssc), |
 | |[librosa.feature.spectral_centroid](https://librosa.org/librosa/generated/librosa.feature.spectral_centroid.html#librosa.feature.spectral_centroid), [.tonnetz](https://librosa.org/librosa/generated/librosa.feature.tonnetz.html#librosa.feature.tonnetz) |
 
 ### Intensity Features
