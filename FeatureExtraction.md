@@ -14,6 +14,7 @@
     - [Hesitation and Puzzlement Features](#hesitation-and-puzzlement-features)
     - [Repetition Features](#repetition-features)
     - [Turn-related Features](#turn-related-features)
+  - [ADReSS Challenge 2020](#adress-challenge-2020)
 
 ## Acoustic Features
 
@@ -101,3 +102,7 @@ These features measures the frequency of repetitions, such as type-token ratio (
 ### Turn-related Features
 
 These features include number of unique words (type-token ratio in [Repetition Features](#repetition-features)) and response time/length (VAD in [Pause-based Features](#pause-based-features)) in a turn, the number of turns, average length of turns, and so on.
+
+## ADReSS Challenge 2020
+
+The baseline features in [ADReSS Challenge 2020](https://arxiv.org/abs/2004.06833) are including ComParE (extracted by [openSMILE](https://www.audeering.com/opensmile/)) and linguistic (extracted by [CLAN](https://dali.talkbank.org/clan/)).
